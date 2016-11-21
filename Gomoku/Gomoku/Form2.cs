@@ -20,10 +20,8 @@ namespace Gomoku
             initializeField();
         }
 
-
         private void initializeField()
         {
-
             this.SuspendLayout();
 
             int x = 0;
@@ -34,9 +32,7 @@ namespace Gomoku
 
             for (int index = 0; index < 324; index++)
             {
-
                 createButton(x, y, index);
-
 
                 if (x < 17)
                 {
@@ -47,17 +43,14 @@ namespace Gomoku
                     x = 0;
                     y++;
                 }
-
             }
 
             this.ResumeLayout();
-
         }
 
         private void createButton(int X_, int Y_, int Index_)
         {
             this._Buttons[Index_] = new System.Windows.Forms.Button();
-
             this._Buttons[Index_].Location = new System.Drawing.Point(X_ * 30, Y_ * 30);
             this._Buttons[Index_].Name = "button" + Index_.ToString();
             this._Buttons[Index_].Size = new System.Drawing.Size(30, 30);
@@ -77,8 +70,7 @@ namespace Gomoku
                 _Buttons[Index_].BackColor = Color.Red;
                 _Buttons[Index_].Enabled = false;
                 this.Text = "Gomoku - Spiel (Spieler 2 ist am Zug.)";
-            } else
-            {
+            } else {
                 _Buttons[Index_].BackColor = Color.Blue;
                 _Buttons[Index_].Enabled = false;
                 this.Text = "Gomoku - Spiel (Spieler 1 ist am Zug.)";
