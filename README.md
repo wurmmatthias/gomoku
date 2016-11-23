@@ -3,4 +3,3 @@ This is a school project written in *CSharp*. The goal of the game is to get fiv
 
 ##Known issues
 - Out of array / index
-- Winning currently only in a specififc pattern
