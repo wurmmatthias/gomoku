@@ -44,10 +44,10 @@ namespace Gomoku
                     y++;
                 }
             }
-
             this.ResumeLayout();
         }
-
+        
+        //Button Properties/Info/Position etc. 
         private void createButton(int X_, int Y_, int Index_)
         {
             this._Buttons[Index_] = new System.Windows.Forms.Button();
@@ -63,6 +63,7 @@ namespace Gomoku
 
         public void OnButtonClick(int Index_)
         {
+            //Player Determination / Colors
             playCounter += 1;
             if (playCounter % 2 == 0)
             {
@@ -74,7 +75,8 @@ namespace Gomoku
                 _Buttons[Index_].Enabled = false;
                 this.Text = "Gomoku - Spiel (Spieler 1 ist am Zug.)";
             }
-
+            
+            /* Game Logic :Start: */
             // Horizontal-Check
             //Player 1
             if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 1].BackColor == Color.Red && _Buttons[Index_ - 2].BackColor == Color.Red && _Buttons[Index_ - 3].BackColor == Color.Red && _Buttons[Index_ - 4].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 1].BackColor == Color.Red && _Buttons[Index_ + 2].BackColor == Color.Red && _Buttons[Index_ + 3].BackColor == Color.Red && _Buttons[Index_ + 4].BackColor == Color.Red) ||
@@ -146,7 +148,7 @@ namespace Gomoku
                 MessageBox.Show("Spieler 2 hat gewonnen!", "Gewonnen!");
                 this.Close();
             }
-
+            /* Game Logic :End: */
         }
 
     }
