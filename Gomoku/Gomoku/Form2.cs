@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,30 +76,34 @@ namespace Gomoku
             }
 
             // Horizontal-Check
-            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 1].BackColor == Color.Red && _Buttons[Index_ - 2].BackColor == Color.Red && _Buttons[Index_ - 3].BackColor == Color.Red && _Buttons[Index_ - 4].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 1].BackColor == Color.Red && _Buttons[Index_ + 2].BackColor == Color.Red && _Buttons[Index_ + 3].BackColor == Color.Red && _Buttons[Index_ + 4].BackColor == Color.Red)
-                /*Scenario 2*/ (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 1].BackColor == Color.Red && _Buttons[Index_ - 1].BackColor == Color.Red && _Buttons[Index_ - 2].BackColor == Color.Red && _Buttons[Index_ - 3].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 1].BackColor == Color.Red && _Buttons[Index_ + 1].BackColor == Color.Red && _Buttons[Index_ + 2].BackColor == Color.Red && _Buttons[Index_ + 3].BackColor == Color.Red)
-                /*Scenario 3*/ (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 1].BackColor == Color.Red && _Buttons[Index_ - 2].BackColor == Color.Red && _Buttons[Index_ + 1].BackColor == Color.Red && _Buttons[Index_ + 2].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 1].BackColor == Color.Red && _Buttons[Index_ - 2].BackColor == Color.Red && _Buttons[Index_ + 1].BackColor == Color.Red && _Buttons[Index_ + 2].BackColor == Color.Red))
+            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 1].BackColor == Color.Red && _Buttons[Index_ - 2].BackColor == Color.Red && _Buttons[Index_ - 3].BackColor == Color.Red && _Buttons[Index_ - 4].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 1].BackColor == Color.Red && _Buttons[Index_ + 2].BackColor == Color.Red && _Buttons[Index_ + 3].BackColor == Color.Red && _Buttons[Index_ + 4].BackColor == Color.Red) ||
+                /*Scenario 2*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 1].BackColor == Color.Red && _Buttons[Index_ - 1].BackColor == Color.Red && _Buttons[Index_ - 2].BackColor == Color.Red && _Buttons[Index_ - 3].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 1].BackColor == Color.Red && _Buttons[Index_ + 1].BackColor == Color.Red && _Buttons[Index_ + 2].BackColor == Color.Red && _Buttons[Index_ + 3].BackColor == Color.Red) ||
+                /*Scenario 3*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 1].BackColor == Color.Red && _Buttons[Index_ - 2].BackColor == Color.Red && _Buttons[Index_ + 1].BackColor == Color.Red && _Buttons[Index_ + 2].BackColor == Color.Red))
             {
                 MessageBox.Show("Spieler 1 hat gewonnen!", "Gewonnen!");
                 this.Close();
             }
-            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_-1].BackColor == Color.Blue && _Buttons[Index_ - 2].BackColor == Color.Blue && _Buttons[Index_ - 3].BackColor == Color.Blue && _Buttons[Index_ - 4].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 1].BackColor == Color.Blue && _Buttons[Index_ + 2].BackColor == Color.Blue && _Buttons[Index_ + 3].BackColor == Color.Blue && _Buttons[Index_ + 4].BackColor == Color.Blue)
-                /*Scenario 2*/ (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 1].BackColor == Color.Blue && _Buttons[Index_ - 1].BackColor == Color.Blue && _Buttons[Index_ - 2].BackColor == Color.Blue && _Buttons[Index_ - 3].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 1].BackColor == Color.Blue && _Buttons[Index_ + 1].BackColor == Color.Blue && _Buttons[Index_ + 2].BackColor == Color.Blue && _Buttons[Index_ + 3].BackColor == Color.Blue)
-                /*Scenario 3*/ (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 1].BackColor == Color.Blue && _Buttons[Index_ - 2].BackColor == Color.Blue && _Buttons[Index_ + 1].BackColor == Color.Blue && _Buttons[Index_ + 2].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 1].BackColor == Color.Blue && _Buttons[Index_ - 2].BackColor == Color.Blue && _Buttons[Index_ + 1].BackColor == Color.Blue && _Buttons[Index_ + 2].BackColor == Color.Blue))
+            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_-1].BackColor == Color.Blue && _Buttons[Index_ - 2].BackColor == Color.Blue && _Buttons[Index_ - 3].BackColor == Color.Blue && _Buttons[Index_ - 4].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 1].BackColor == Color.Blue && _Buttons[Index_ + 2].BackColor == Color.Blue && _Buttons[Index_ + 3].BackColor == Color.Blue && _Buttons[Index_ + 4].BackColor == Color.Blue) ||
+                /*Scenario 2*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 1].BackColor == Color.Blue && _Buttons[Index_ - 1].BackColor == Color.Blue && _Buttons[Index_ - 2].BackColor == Color.Blue && _Buttons[Index_ - 3].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 1].BackColor == Color.Blue && _Buttons[Index_ + 1].BackColor == Color.Blue && _Buttons[Index_ + 2].BackColor == Color.Blue && _Buttons[Index_ + 3].BackColor == Color.Blue) ||
+                /*Scenario 3*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 1].BackColor == Color.Blue && _Buttons[Index_ - 2].BackColor == Color.Blue && _Buttons[Index_ + 1].BackColor == Color.Blue && _Buttons[Index_ + 2].BackColor == Color.Blue))
             {
                 MessageBox.Show("Spieler 2 hat gewonnen!","Gewonnen!");
                 this.Close();
             }
 
             // Vertikal-Check
-            if ((_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 18].BackColor == Color.Red && _Buttons[Index_ - 36].BackColor == Color.Red && _Buttons[Index_ - 54].BackColor == Color.Red && _Buttons[Index_ - 72].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 18].BackColor == Color.Red && _Buttons[Index_ + 36].BackColor == Color.Red && _Buttons[Index_ + 54].BackColor == Color.Red && _Buttons[Index_ + 72].BackColor == Color.Red))
+            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 18].BackColor == Color.Red && _Buttons[Index_ - 36].BackColor == Color.Red && _Buttons[Index_ - 54].BackColor == Color.Red && _Buttons[Index_ - 72].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 18].BackColor == Color.Red && _Buttons[Index_ + 36].BackColor == Color.Red && _Buttons[Index_ + 54].BackColor == Color.Red && _Buttons[Index_ + 72].BackColor == Color.Red) ||
+                /*Scenario 2*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 18].BackColor == Color.Red && _Buttons[Index_ + 18].BackColor == Color.Red && _Buttons[Index_ + 36].BackColor == Color.Red && _Buttons[Index_ + 54].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 18].BackColor == Color.Red && _Buttons[Index_ - 36].BackColor == Color.Red && _Buttons[Index_ - 54].BackColor == Color.Red && _Buttons[Index_ + 18].BackColor == Color.Red) ||
+                /*Scenario 3*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 18].BackColor == Color.Red && _Buttons[Index_ - 36].BackColor == Color.Red && _Buttons[Index_ + 18].BackColor == Color.Red && _Buttons[Index_ + 36].BackColor == Color.Red))
             {
                 MessageBox.Show("Spieler 1 hat gewonnen!", "Gewonnen!");
                 this.Close();
             }
-            if ((_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 18].BackColor == Color.Blue && _Buttons[Index_ - 36].BackColor == Color.Blue && _Buttons[Index_ - 54].BackColor == Color.Blue && _Buttons[Index_ - 72].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 18].BackColor == Color.Blue && _Buttons[Index_ + 36].BackColor == Color.Blue && _Buttons[Index_ + 54].BackColor == Color.Blue && _Buttons[Index_ + 72].BackColor == Color.Blue))
+            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 18].BackColor == Color.Blue && _Buttons[Index_ - 36].BackColor == Color.Blue && _Buttons[Index_ - 54].BackColor == Color.Blue && _Buttons[Index_ - 72].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 18].BackColor == Color.Blue && _Buttons[Index_ + 36].BackColor == Color.Blue && _Buttons[Index_ + 54].BackColor == Color.Blue && _Buttons[Index_ + 72].BackColor == Color.Blue)
+                /*Scenario 2*/(_Buttons[Index_].BackColor == Color.BlueBlue && _Buttons[Index_ - 18].BackColor == Color.BlueBlue && _Buttons[Index_ + 18].BackColor == Color.Blue && _Buttons[Index_ + 36].BackColor == Color.Blue && _Buttons[Index_ + 54].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 18].BackColor == Color.Blue && _Buttons[Index_ - 36].BackColor == Color.Blue && _Buttons[Index_ - 54].BackColor == Color.Blue && _Buttons[Index_ + 18].BackColor == Color.Blue) ||
+                /*Scenario 3*/(_Buttons[Index_].BackColor == Color.BlueBlue && _Buttons[Index_ - 18].BackColor == Color.BlueBlue && _Buttons[Index_ - 36].BackColor == Color.Blue && _Buttons[Index_ + 18].BackColor == Color.Blue && _Buttons[Index_ + 36].BackColor == Color.Blue))
             {
-                MessageBox.Show("Spieler 2 hat gewonnen!", "Gewonnen!");
+                MessageBox.Show("Spieler 2 hat gewonnen!", "Gewonnen!");Blue
                 this.Close();
             }
 
