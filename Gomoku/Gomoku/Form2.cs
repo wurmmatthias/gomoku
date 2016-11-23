@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -105,7 +105,7 @@ namespace Gomoku
                 this.Close();
             }
             //Player 2
-            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 18].BackColor == Color.Blue && _Buttons[Index_ - 36].BackColor == Color.Blue && _Buttons[Index_ - 54].BackColor == Color.Blue && _Buttons[Index_ - 72].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 18].BackColor == Color.Blue && _Buttons[Index_ + 36].BackColor == Color.Blue && _Buttons[Index_ + 54].BackColor == Color.Blue && _Buttons[Index_ + 72].BackColor == Color.Blue)
+            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 18].BackColor == Color.Blue && _Buttons[Index_ - 36].BackColor == Color.Blue && _Buttons[Index_ - 54].BackColor == Color.Blue && _Buttons[Index_ - 72].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 18].BackColor == Color.Blue && _Buttons[Index_ + 36].BackColor == Color.Blue && _Buttons[Index_ + 54].BackColor == Color.Blue && _Buttons[Index_ + 72].BackColor == Color.Blue) ||
                 /*Scenario 2*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 18].BackColor == Color.Blue && _Buttons[Index_ + 18].BackColor == Color.Blue && _Buttons[Index_ + 36].BackColor == Color.Blue && _Buttons[Index_ + 54].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 18].BackColor == Color.Blue && _Buttons[Index_ - 36].BackColor == Color.Blue && _Buttons[Index_ - 54].BackColor == Color.Blue && _Buttons[Index_ + 18].BackColor == Color.Blue) ||
                 /*Scenario 3*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 18].BackColor == Color.Blue && _Buttons[Index_ - 36].BackColor == Color.Blue && _Buttons[Index_ + 18].BackColor == Color.Blue && _Buttons[Index_ + 36].BackColor == Color.Blue))
             {
@@ -116,7 +116,7 @@ namespace Gomoku
             // Crosswise-Check
             //Right
             //Player 1
-            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 17].BackColor == Color.Red && _Buttons[Index_ - 34].BackColor == Color.Red && _Buttons[Index_ - 51].BackColor == Color.Red && _Buttons[Index_ - 68].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 17].BackColor == Color.Red && _Buttons[Index_ + 34].BackColor == Color.Red && _Buttons[Index_ + 51].BackColor == Color.Red && _Buttons[Index_ + 68].BackColor == Color.Red)
+            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 17].BackColor == Color.Red && _Buttons[Index_ - 34].BackColor == Color.Red && _Buttons[Index_ - 51].BackColor == Color.Red && _Buttons[Index_ - 68].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 17].BackColor == Color.Red && _Buttons[Index_ + 34].BackColor == Color.Red && _Buttons[Index_ + 51].BackColor == Color.Red && _Buttons[Index_ + 68].BackColor == Color.Red) ||
                 /*Scenario 2*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 17].BackColor == Color.Red && _Buttons[Index_ - 34].BackColor == Color.Red && _Buttons[Index_ - 51].BackColor == Color.Red && _Buttons[Index_ + 17].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 17].BackColor == Color.Red && _Buttons[Index_ + 17].BackColor == Color.Red && _Buttons[Index_ + 34].BackColor == Color.Red && _Buttons[Index_ + 51].BackColor == Color.Red) ||
                 /*Scenario 3*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 17].BackColor == Color.Red && _Buttons[Index_ - 34].BackColor == Color.Red && _Buttons[Index_ + 17].BackColor == Color.Red && _Buttons[Index_ + 34].BackColor == Color.Red))
             {
@@ -124,7 +124,7 @@ namespace Gomoku
                 this.Close();
             }
             //Player 2
-            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 17].BackColor == Color.Blue && _Buttons[Index_ - 34].BackColor == Color.Blue && _Buttons[Index_ - 51].BackColor == Color.Blue && _Buttons[Index_ - 68].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 17].BackColor == Color.Blue && _Buttons[Index_ + 34].BackColor == Color.Blue && _Buttons[Index_ + 51].BackColor == Color.Blue && _Buttons[Index_ + 68].BackColor == Color.Blue)
+            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 17].BackColor == Color.Blue && _Buttons[Index_ - 34].BackColor == Color.Blue && _Buttons[Index_ - 51].BackColor == Color.Blue && _Buttons[Index_ - 68].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 17].BackColor == Color.Blue && _Buttons[Index_ + 34].BackColor == Color.Blue && _Buttons[Index_ + 51].BackColor == Color.Blue && _Buttons[Index_ + 68].BackColor == Color.Blue) ||
                 /*Scenario 2*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 17].BackColor == Color.Blue && _Buttons[Index_ - 34].BackColor == Color.Blue && _Buttons[Index_ - 51].BackColor == Color.Blue && _Buttons[Index_ + 17].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 17].BackColor == Color.Blue && _Buttons[Index_ + 17].BackColor == Color.Blue && _Buttons[Index_ + 34].BackColor == Color.Blue && _Buttons[Index_ + 51].BackColor == Color.Blue) ||
                 /*Scenario 3*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 17].BackColor == Color.Blue && _Buttons[Index_ - 34].BackColor == Color.Blue && _Buttons[Index_ + 17].BackColor == Color.Blue && _Buttons[Index_ + 34].BackColor == Color.Blue))
             {
@@ -133,7 +133,7 @@ namespace Gomoku
             }
             //Left
             //Player 1
-            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 19].BackColor == Color.Red && _Buttons[Index_ - 38].BackColor == Color.Red && _Buttons[Index_ - 57].BackColor == Color.Red && _Buttons[Index_ - 76].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 19].BackColor == Color.Red && _Buttons[Index_ + 38].BackColor == Color.Red && _Buttons[Index_ + 57].BackColor == Color.Red && _Buttons[Index_ + 76].BackColor == Color.Red)
+            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 19].BackColor == Color.Red && _Buttons[Index_ - 38].BackColor == Color.Red && _Buttons[Index_ - 57].BackColor == Color.Red && _Buttons[Index_ - 76].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ + 19].BackColor == Color.Red && _Buttons[Index_ + 38].BackColor == Color.Red && _Buttons[Index_ + 57].BackColor == Color.Red && _Buttons[Index_ + 76].BackColor == Color.Red) ||
                 /*Scenario 2*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 19].BackColor == Color.Red && _Buttons[Index_ - 38].BackColor == Color.Red && _Buttons[Index_ - 57].BackColor == Color.Red && _Buttons[Index_ + 19].BackColor == Color.Red) || (_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 19].BackColor == Color.Red && _Buttons[Index_ + 19].BackColor == Color.Red && _Buttons[Index_ + 38].BackColor == Color.Red && _Buttons[Index_ + 57].BackColor == Color.Red) ||
                 /*Scenario 3*/(_Buttons[Index_].BackColor == Color.Red && _Buttons[Index_ - 19].BackColor == Color.Red && _Buttons[Index_ - 38].BackColor == Color.Red && _Buttons[Index_ + 19].BackColor == Color.Red && _Buttons[Index_ + 38].BackColor == Color.Red))
             {
@@ -141,7 +141,7 @@ namespace Gomoku
                 this.Close();
             }
             //Player 2
-            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 19].BackColor == Color.Blue && _Buttons[Index_ - 38].BackColor == Color.Blue && _Buttons[Index_ - 57].BackColor == Color.Blue && _Buttons[Index_ - 76].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 19].BackColor == Color.Blue && _Buttons[Index_ + 38].BackColor == Color.Blue && _Buttons[Index_ + 57].BackColor == Color.Blue && _Buttons[Index_ + 76].BackColor == Color.Blue)
+            if (/*Scenario 1*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 19].BackColor == Color.Blue && _Buttons[Index_ - 38].BackColor == Color.Blue && _Buttons[Index_ - 57].BackColor == Color.Blue && _Buttons[Index_ - 76].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ + 19].BackColor == Color.Blue && _Buttons[Index_ + 38].BackColor == Color.Blue && _Buttons[Index_ + 57].BackColor == Color.Blue && _Buttons[Index_ + 76].BackColor == Color.Blue) ||
                 /*Scenario 2*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 19].BackColor == Color.Blue && _Buttons[Index_ - 38].BackColor == Color.Blue && _Buttons[Index_ - 57].BackColor == Color.Blue && _Buttons[Index_ + 19].BackColor == Color.Blue) || (_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 19].BackColor == Color.Blue && _Buttons[Index_ + 19].BackColor == Color.Blue && _Buttons[Index_ + 38].BackColor == Color.Blue && _Buttons[Index_ + 57].BackColor == Color.Blue) ||
                 /*Scenario 3*/(_Buttons[Index_].BackColor == Color.Blue && _Buttons[Index_ - 19].BackColor == Color.Blue && _Buttons[Index_ - 38].BackColor == Color.Blue && _Buttons[Index_ + 19].BackColor == Color.Blue && _Buttons[Index_ + 38].BackColor == Color.Blue))
             {
